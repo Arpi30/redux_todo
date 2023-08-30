@@ -13,13 +13,15 @@ export const TodoForm = () => {
         title: inputRef.current.value,
       })
     );
+    inputRef.current.value = "";
   };
 
   return (
     <div
-      className="d-flex justify-content-center align-items-center"
+      className="d-flex flex-column justify-content-center align-items-center "
       style={{ height: "35vh" }}>
-      <form className="w-25" onSubmit={onSubmitHandler}>
+      <h2>Welcome to my Todo App</h2>
+      <form onSubmit={onSubmitHandler} className="w-50">
         <div className="mb-3">
           <label htmlFor="todo" className="form-label">
             Add todo
@@ -29,7 +31,7 @@ export const TodoForm = () => {
             type="text"
             className="form-control"
             id="todo"
-            placeholder="Add dTodo"
+            placeholder="Add Todo"
           />
         </div>
         <button type="submit" className="btn btn-primary">

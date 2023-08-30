@@ -4,8 +4,7 @@ import { Items } from "./components/items/items";
 
 function App() {
   return (
-    <div className="App">
-      <h2 className="text-center mt-5">Welcome to React Redux Todo app</h2>
+    <div className="App w-50">
       <TodoForm />
       <Items />
     </div>
