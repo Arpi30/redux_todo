@@ -10,6 +10,7 @@ export const TodoForm = () => {
     e.preventDefault();
     dispatch(
       addTodo({
+        id: Date.now(),
         title: inputRef.current.value,
       })
     );
